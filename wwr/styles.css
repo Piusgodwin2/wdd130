@@ -1,0 +1,61 @@
+.navbar{
+  float:right;
+  width: 50%;
+  height: 60%;
+  position: fixed;/*it maintain a fixed position at the top*/
+  z-index: 1000;/*  is a CSS property that defines the order of overlapping HTML elements.Elements with a higher index will be placed on top of elements with a lower index. Note: Z index only works on positioned elements */
+  top: 0;
+  left: 0;
+
+}
+ul{
+  float: left;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+li{
+  list-style: none;
+  margin-right:50px;
+  margin-top:0;
+}
+.navbar a:hover{
+  color: #ffb703;
+}
+.navbar a:active{
+  color: #ae2012;
+}
+.heading2p img {
+  display: block; /* Prevents extra space */
+  margin: left; /* places image in the left */
+  max-width: 60%; /* Responsive width */
+  height: 50%; /* Keeps aspect ratio */
+  border-radius: 10px;
+}
+p{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: left;
+  }
+  .heading5 img{
+    height: 400px;
+    width: 33%;
+    border-radius: 10px;
+    align-items: center;
+  }
+  h{
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  }
+  h2{
+    text-align: center;
+    color: tomato;
+  }
+  h1{
+    text-align: center;
+    color: tomato;
+  }
