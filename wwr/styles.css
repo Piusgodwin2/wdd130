@@ -6,56 +6,83 @@
   z-index: 1000;/*  is a CSS property that defines the order of overlapping HTML elements.Elements with a higher index will be placed on top of elements with a lower index. Note: Z index only works on positioned elements */
   top: 0;
   left: 0;
-
 }
 ul{
-  float: left;
+  float: right;
   display: flex;
   justify-content: center;
   font-weight: bold;
 }
 li{
-  list-style: none;
+  list-style: none;/* this is to remove the bullets points in the list*/
   margin-right:50px;
   margin-top:0;
 }
 .navbar a:hover{
   color: #ffb703;
 }
-.navbar a:active{
-  color: #ae2012;
+.heroimage img{
+  width: 160px;
+  height: auto;
 }
-.heading2p img {
-  display: block; /* Prevents extra space */
-  margin: left; /* places image in the left */
-  max-width: 60%; /* Responsive width */
-  height: auto; /* Keeps aspect ratio */
+/*.container img {
+  display: block;  Prevents extra space 
+  margin: left;  places image in the left 
+  max-width: 50%;  Responsive width 
+  height: 50%; Keeps aspect ratio 
   border-radius: 10px;
-}
+}*/
 p{
     font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
     text-align: left;
   }
   .heading5 img{
-    height: auto;
-    width: 34%;
+    height: 300px;
+    width: 33%;
     border-radius: 10px;
     align-items: center;
-  }
-  h{
-  font-family: "Tektur", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
   }
   h2{
     text-align: center;
     color: tomato;
   }
-  h1{
-    text-align: center;
-    color: tomato;
-  }
+body{
+  margin: 0;
+  padding: 0;
+  position: relative; /* ensure the body acts as a reference*/
+}
+.container img{
+  position: relative; /* acts as the parents for absolute children*/
+  width: 60%;
+  height: 40%;
+  border-radius: 10px ;
+}
+.photo {
+  position: absolute;
+  top: 250px;
+  right: 330px;
+  width: 45%;
+  height: 600px;
+  border-radius: 1px;
+}
+.heading3 p{
+  position: absolute;
+  color: #780000;
+  font-size: 26px;
+  top: 250px;
+  left: 100px;
+  width: 340px; /* makes sure text stays on the left*/
+  padding: 10px;
+  font-family: sans-serif;
+}
+.heading3 h1{
+  position: absolute;
+  top: 170px;
+  left: 100px;
+    color:#fdfcdc;
+}
+footer{
+  margin-top: 15px;
+  border-top: 1px solid #000;
+}
