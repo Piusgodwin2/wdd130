@@ -1,0 +1,116 @@
+.header {
+  display: grid; /* Enable CSS Grid */
+  grid-template-columns:  120px 1fr; /* Two columns: logo + nav */
+  align-items: center; /* Vertically center content */
+  padding: 0;
+  margin: 0;
+  background-color: #dad7cd;
+  color: white;
+}
+header,main,footer{
+  width: 80%;
+  align-items: right;
+  justify-content: flex-end;
+}
+ul{
+  float: right;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+li{
+  list-style: none;/* this is to remove the bullets points in the list*/
+  margin-right:50px;
+  margin-top:0;
+}
+a{
+  color: #0d1b2a;/* Makes the link text blue */
+  text-decoration: none;/* Optional: removes underline */
+}
+.navbar a:hover{
+  color: #ffb703;
+}
+.logo img{
+  width: 120px;
+  height: auto;
+}
+h1,h2{               /* this controls the h1 and h2 heading*/
+    font-family: sans-serif;
+    color: #6f1d1b;
+    text-align: center;
+  }
+  nav,p,section,article{
+    margin: 0;
+    padding: 8px;
+    font-size: small;
+  }
+.hero{
+  position: relative; /* ensure the body acts as a reference to the children elements*/
+}
+.hero img{
+  display: block; /* makes an element a block-level element, 
+    meaning it starts on a new line and stretches to occupy the full width of its container by default*/
+  width: 100%;
+  height: auto;
+}
+h1 {
+  position: absolute;
+  top: 20px;
+  width: 96%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: #3a86ff;
+  color: #fff;
+}
+.hero article img {
+  width: 150px;
+  float: right;
+  margin-left: 10px;
+
+}
+.hero article{
+  position: absolute;
+  top: 20%;
+  float: left;
+  background-color: #fff;
+  color: #000;
+}
+.historyimage{
+  width:200px;
+  height: auto;
+}
+section img{
+  width: 150px;
+  height: auto;
+  margin: 5px;
+}
+.historysection {             /* allows text to wrap around images*/
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 10px;
+  align-items: center;
+  margin-top: 1rem;
+}
+.historyimage {
+  max-width: 200px;
+  height: auto;
+}
+.history-text {
+  text-align: justify;
+}
+.socialmedia a{
+  float: right;
+  margin: 10px;
+}
+.socialmedia i{
+  color: #000;
+}
+footer{
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  display: grid; /* Enable CSS Grid */
+  grid-template-columns:  auto 1fr; /* Two columns: logo + nav */
+  text-align: center; /* Vertically center content */
+  padding: 20px;
+}
