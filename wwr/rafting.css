@@ -1,0 +1,133 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.header {
+    display: grid; /* Enable CSS Grid */
+    grid-template-columns:  120px 1fr; /* Two columns: logo + nav */
+    align-items: center; /* Vertically center content */
+    padding: 0;
+    margin: 0;
+    background-color: #dad7cd;
+    color: white;
+  }
+  header,main {
+    width: 80%;
+    align-items: right;
+    justify-content: flex-end;
+  }
+  ul{
+    float: right;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+  li{
+    list-style: none;/* this is to remove the bullets points in the list*/
+    margin-right:50px;
+    margin-top:0;
+  }
+  a{
+    color: #0d1b2a;/* Makes the link text blue */
+    text-decoration: none;/* Optional: removes underline */
+  }
+  .navbar a:hover{
+    color: #ffb703;
+  }
+  .logo img{
+    width: 120px;
+    height: auto;
+  }
+  h2,h3{
+    font-family: sans-serif;
+    color: #6f1d1b;
+    text-align: left;
+  }
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  .employee {
+    grid-column: 1 / 3;
+    text-align: center;
+    margin-top: 2rem;
+  }
+ .employee .staff{
+    display: inline-block;
+    margin: 0 1rem;
+    text-align: center;
+  }
+  .employee img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+   
+  }
+  .employee p{
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .userinfo {
+    grid-column: 2 / 3;
+  }
+  
+  .userinfo form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .userinfo label {
+    margin: 0.5rem 0 0.25rem;
+    font-weight: bold;
+  }
+  .contactinfo {
+    grid-column: 1 / 2;
+  }
+  input,textarea {
+    padding: 0.1rem;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    border-radius: 0.2rem;
+  }
+  input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    vertical-align: bottom;
+  }
+  button{
+    margin-top: 2rem;
+    background-color: #bde0fe;
+    color: #000814;
+    border-radius: 0.3rem;
+    border-color: #c1121f;
+  }
+  button a:active{
+    color: #fdf0d5;
+  }
+    footer{
+    margin-top: 10px;
+    border-top: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    color: #023047;
+  }
