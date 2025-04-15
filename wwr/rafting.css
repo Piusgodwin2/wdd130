@@ -18,7 +18,6 @@ body {
   }
   header,main {
     width: 80%;
-    align-items: right;
     justify-content: flex-end;
   }
   ul{
