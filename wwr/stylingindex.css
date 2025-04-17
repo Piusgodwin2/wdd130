@@ -1,0 +1,161 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .header {
+      display: grid; /* Enable CSS Grid */
+      grid-template-columns:  120px 1fr; /* Two columns: logo + nav */
+      align-items: center; /* Vertically center content */
+      padding: 0;
+      margin: 0;
+      background-color: #dad7cd;
+      color: white;
+    }
+    header,main {
+      width: 80%;
+      justify-content: flex-end;
+    }
+    ul{
+      float: right;
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+    }
+    li{
+      list-style: none;/* this is to remove the bullets points in the list*/
+      margin-right:50px;
+      margin-top:0;
+    }
+    a{
+      color: #0d1b2a;/* Makes the link text blue */
+      text-decoration: none;/* Optional: removes underline */
+    }
+    .navbar a:hover{
+      color: #ffb703;
+    }
+    .logo img{
+      width: 120px;
+      height: auto;
+    }
+    .hero{
+        text-align: center;
+        padding: 20px;
+        position: relative;
+    }
+    .hero img{
+        height: auto;
+        width: 50%;
+    }
+    .why-choose-us {
+      text-align: center;
+      padding: 0;
+    }
+    h1,h2,h3{
+      font-family: sans-serif;
+    }
+    p{
+      font-family: arial;
+    }
+    .division{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        padding: 5px;
+    }
+    .division p{
+        text-align: center;
+        font-weight: bold;
+        font-family: monospace;
+    }
+    .division img{
+        height: auto;
+        width: 10rem;
+        border: 3px solid #ccc;
+        border-radius: 5px;
+    }
+    .coa-section{
+      background-color: #f7ede2;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 800px;
+    }
+    .coa-section p{
+      margin-bottom: 10px;
+      font-size: 1rem;
+      font-family: arial;
+    }
+    .btn{
+      padding:10px 20px;
+      background-color: #ffffff;
+      color: #000;
+      border-radius: 5px;
+      font-family: sans-serif bold;
+    }
+    .forms {
+      background-color: white;
+      padding: 30px 20px;
+      margin: 40px auto;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .forms h3 {
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input[type="text"],
+    input[type="email"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #2196f3;
+      color: white;
+      padding: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+    }
+    footer{
+        background-color: #dad7cd;
+        padding: 20px 0;
+      }
+      
+      .footer-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        flex-wrap: wrap;
+      }
+      
+      .footer-container p {
+        color: #000;
+        font-size: 14px;
+        margin: 10px 0;
+      }
+      .socialmedia i{
+      color: #000;
+      float: right;
+      width: 30px;
+      height: 30px;
+      gap: 30px;
+    }
+
+
